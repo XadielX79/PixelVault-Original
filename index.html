@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tienda de videojuegos | PixelVault</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <script>try {document.documentElement.setAttribute('data-bs-theme', localStorage.getItem('pv-theme') || 'light')} catch (e) { }</script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl sticky-top site-nav border-bottom">
+        <div class="container"><a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark">🎮</span>
+                PixelVault</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-xl-center">
+       <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#juegos">Juegos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+                    <li class="nav-item"><a class="nav-link" href="jquery.html">jQuery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="json.html">JSON</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hosting.html">Hosting y dominios</a></li>
+                    <a class="nav-link" href="cuestionario.html">Cuestionario</a></li>
+                    <li class="nav-item ms-xl-2"><button class="btn btn-sm btn-outline-secondary theme-toggle"
+                            type="button"><i class="bi bi-moon-stars"></i> Tema</button></li>
+                    <li class="nav-item ms-xl-2"><button class="btn btn-sm btn-primary" data-bs-toggle="offcanvas"
+                            data-bs-target="#cart">🛍 Carrito <span id="cartCount"
+                                class="badge text-bg-light">0</span></button></li>
+                                <div class="discord-container">
+    <a
+        href="https://discord.com/api/webhooks/1558543345536737341/Ptf-rsDEt5PE58laqCPbL9cuz2f3_1e49M-ew4k0k2XzIG7ECGaG9RkM7Sfx5ZZGh8JP"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="discord-btn"
+    >
+        <span>Discord</span>
+    </a>
+</div>
+                              
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero">
+            <div class="container py-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-5"><span class="eyebrow">TU PRÓXIMA AVENTURA EMPIEZA AQUÍ</span>
+                        <h1 class="display-3 fw-bold mt-3">Encuentra tu próximo <span class="accent">juego
+                                favorito.</span></h1>
+                        <p class="lead text-secondary">Aventuras, carreras, mundos abiertos y diversión para cada tipo
+                            de jugador.</p><a class="btn btn-primary btn-lg" href="#juegos">Explorar juegos</a> <a
+                            class="btn btn-outline-secondary btn-lg" href="#contacto">Contáctanos</a>
+                        <p class="small text-secondary mt-3">Tienda de demostración para un proyecto escolar.</p>
+                    </div>
+                    <div class="col-lg-7">
+                        <div id="slider" class="carousel slide carousel-fade rounded-4 overflow-hidden shadow"
+                            data-bs-ride="carousel" data-bs-interval="4000">
+                            <div class="carousel-indicators"><button data-bs-target="#slider" data-bs-slide-to="0"
+                                    class="active" aria-label="Diapositiva 1"></button><button data-bs-target="#slider"
+                                    data-bs-slide-to="1" aria-label="Diapositiva 2"></button><button
+                                    data-bs-target="#slider" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active"><img
+                                        src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1300&q=85"
+                                        alt="Estación de videojuegos">
+                                    <div class="carousel-caption text-start">
+                                        <h2>Historias que te atrapan</h2>
+                                        <p>Descubre nuevos mundos.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item"><img
+                                        src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1300&q=85"
+                                        alt="Consola de videojuegos">
+                                    <div class="carousel-caption text-start">
+                                        <h2>Juega a tu manera</h2>
+                                        <p>Acción, estrategia y aventuras.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item"><img
+                                        src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&w=1300&q=85"
+                                        alt="Equipo gamer">
+                                    <div class="carousel-caption text-start">
+                                        <h2>Comparte la diversión</h2>
+                                        <p>Tu siguiente partida te espera.</p>
+                                    </div>
+                                </div>
+                            </div><button class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev"
+                                aria-label="Anterior"><span class="carousel-control-prev-icon"></span></button><button
+                                class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next"
+                                aria-label="Siguiente"><span class="carousel-control-next-icon"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="juegos" class="container py-5">
+            <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+                <div><span class="eyebrow">CATÁLOGO</span>
+                    <h2 class="display-6 fw-bold">Juegos destacados</h2>
+                    <p class="text-secondary mb-0">Precios de ejemplo, no son ofertas reales.</p>
+                </div><input id="searchGame" class="form-control searchbox" type="search" placeholder="Buscar juego...">
+            </div>
+            <div class="row g-4" id="games">
+                <div class="col-sm-6 col-lg-4 game-item" data-search="the legend of zelda aventura">
+                    <article class="card game-card h-100">
+                        <div class="game-img"><img
+                                src="img/Zelda.jpg"
+                                alt="Imagen ilustrativa para The Legend of Zelda" loading="lazy"><span>Aventura</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 fw-bold">The Legend of Zelda</h3>
+                            <p class="text-secondary">Explora tierras misteriosas y resuelve acertijos.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center"><strong
+                                    class="price">$59.99</strong><button class="btn btn-primary btn-sm add-cart"
+                                    data-id="zelda" data-name="The Legend of Zelda" data-price="59.99"><i
+                                        class="bi bi-bag-plus"></i> Agregar</button></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4 game-item" data-search="minecraft creatividad">
+                    <article class="card game-card h-100">
+                        <div class="game-img"><img
+                                src="img/minecraft.png"
+                                alt="Imagen ilustrativa para Minecraft" loading="lazy"><span>Creatividad</span></div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 fw-bold">Minecraft</h3>
+                            <p class="text-secondary">Construye, reúne recursos y crea tu propio mundo.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center"><strong
+                                    class="price">$29.99</strong><button class="btn btn-primary btn-sm add-cart"
+                                    data-id="minecraft" data-name="Minecraft" data-price="29.99"><i
+                                        class="bi bi-bag-plus"></i> Agregar</button></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4 game-item" data-search="grand theft auto v mundo abierto">
+                    <article class="card game-card h-100">
+                        <div class="game-img"><img
+                                src="img/Grand_Theft_Auto_V.png"
+                                alt="Imagen ilustrativa para Grand Theft Auto V" loading="lazy"><span>Mundo
+                                abierto</span></div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 fw-bold">Grand Theft Auto V</h3>
+                            <p class="text-secondary">Recorre una gran ciudad y completa misiones.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center"><strong
+                                    class="price">$24.99</strong><button class="btn btn-primary btn-sm add-cart"
+                                    data-id="gta" data-name="Grand Theft Auto V" data-price="24.99"><i
+                                        class="bi bi-bag-plus"></i> Agregar</button></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4 game-item" data-search="ea sports fc deportes">
+                    <article class="card game-card h-100">
+                        <div class="game-img"><img
+                                src="img/FC EA.webp"
+                                alt="Imagen ilustrativa para EA Sports FC" loading="lazy"><span>Deportes</span></div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 fw-bold">EA Sports FC</h3>
+                            <p class="text-secondary">Forma tu equipo y compite en el campo virtual.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center"><strong
+                                    class="price">$49.99</strong><button class="btn btn-primary btn-sm add-cart"
+                                    data-id="fc" data-name="EA Sports FC" data-price="49.99"><i
+                                        class="bi bi-bag-plus"></i> Agregar</button></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4 game-item" data-search="forza horizon carreras">
+                    <article class="card game-card h-100">
+                        <div class="game-img"><img
+                                src="img/Forza_Horizon_.jpg"
+                                alt="Imagen ilustrativa para Forza Horizon" loading="lazy"><span>Carreras</span></div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 fw-bold">Forza Horizon</h3>
+                            <p class="text-secondary">Conduce coches increíbles en escenarios abiertos.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center"><strong
+                                    class="price">$39.99</strong><button class="btn btn-primary btn-sm add-cart"
+                                    data-id="forza" data-name="Forza Horizon" data-price="39.99"><i
+                                        class="bi bi-bag-plus"></i> Agregar</button></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4 game-item" data-search="hogwarts legacy fantasía">
+                    <article class="card game-card h-100">
+                        <div class="game-img"><img
+                                src="img/NFS Most Wanted.webp"
+                                alt="Imagen ilustrativa para Hogwarts Legacy" loading="lazy"><span>Carreras</span></div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 fw-bold">NFS Most Wantedy</h3>
+                            <p class="text-secondary">Escapa de la policia y desafia a la blacklist</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center"><strong
+                                    class="price">$5.99</strong><button class="btn btn-primary btn-sm add-cart"
+                                    data-id="fantasy" data-name="Hogwarts Legacy" data-price="44.99"><i
+                                        class="bi bi-bag-plus"></i> Agregar</button></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <p id="noGames" class="text-center text-secondary d-none py-4">No encontramos juegos con ese nombre.</p>
+        </section>
+        <section id="nosotros" class="about py-5">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6"><img class="about-img"
+                            src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1100&q=80"
+                            alt="Espacio gamer"></div>
+                    <div class="col-lg-6"><span class="eyebrow">SOBRE PIXELVAULT</span>
+                        <h2 class="display-6 fw-bold mt-2">Un espacio para quienes disfrutan jugar.</h2>
+                        <p class="text-secondary">PixelVault es una propuesta de tienda digital para practicar el diseño
+                            y desarrollo web. El catálogo, los precios y el carrito son demostrativos; no se venden
+                            productos ni se procesan pagos reales.</p>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <div class="feature"><i class="bi bi-grid"></i>
+                                    <h3 class="h6 mt-2">Catálogo organizado</h3>
+                                    <p class="small text-secondary mb-0">Busca juegos por nombre o categoría.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature"><i class="bi bi-bag-check"></i>
+                                    <h3 class="h6 mt-2">Carrito interactivo</h3>
+                                    <p class="small text-secondary mb-0">Agrega o elimina juegos y calcula el total.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-5"><span class="eyebrow">CONTACTO</span>
+                    <h2 class="display-6 fw-bold mt-2">¿En qué podemos ayudarte?</h2>
+                    <p class="text-secondary">Completa el formulario para probar la validación. En esta versión los
+                        mensajes no se envían a un servidor.</p>
+                    <p><i class="bi bi-envelope accent me-2"></i> adielvelasquez444@gmail.com</p>
+                    <p><i class="bi bi-clock accent me-2"></i> Lunes a viernes, 8:00 a. m. – 5:00 p. m.</p>
+                </div>
+                <div class="col-lg-7">
+                    <form id="contactForm" class="contact-box needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6"><label class="form-label" for="contactName">Nombre</label><input
+                                    class="form-control" id="contactName" required minlength="2">
+                                <div class="invalid-feedback">Escribe tu nombre.</div>
+                            </div>
+                            <div class="col-md-6"><label class="form-label" for="contactEmail">Correo
+                                    electrónico</label><input class="form-control" id="contactEmail" type="email"
+                                    required>
+                                <div class="invalid-feedback">Escribe un correo válido.</div>
+                            </div>
+                            <div class="col-12"><label class="form-label" for="contactReason">Motivo</label><select
+                                    class="form-select" id="contactReason" required>
+                                    <option value="" selected disabled>Elige una opción</option>
+                                    <option>Información de un juego</option>
+                                    <option>Consulta sobre un pedido</option>
+                                    <option>Sugerencia</option>
+                                    <option>Otro</option>
+                                </select>
+                                <div class="invalid-feedback">Selecciona un motivo.</div>
+                            </div>
+                            <div class="col-12"><label class="form-label" for="contactMessage">Mensaje</label><textarea
+                                    class="form-control" id="contactMessage" rows="4" required
+                                    minlength="10"></textarea>
+                                <div class="invalid-feedback">Escribe al menos 10 caracteres.</div>
+                            </div>
+                            <div class="col-12"><button class="btn btn-primary btn-lg" type="submit"><i
+                                        class="bi bi-send me-2"></i>Enviar consulta</button></div>
+                        </div>
+                        <div id="contactStatus" class="alert d-none mt-3" role="status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="cartTitle">
+        <div class="offcanvas-header border-bottom">
+            <div>
+                <h2 class="offcanvas-title h5" id="cartTitle">Tu carrito</h2>
+                <p class="small text-secondary mb-0">Pedido de demostración</p>
+            </div><button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <div id="cartItems" class="flex-grow-1">
+                <p class="text-secondary">Todavía no has agregado juegos.</p>
+            </div>
+            <div class="border-top pt-3">
+                <div class="d-flex justify-content-between mb-3"><strong>Total</strong><strong
+                        id="cartTotal">$0.00</strong></div><button id="checkout" class="btn btn-primary w-100">Simular
+                    pedido</button>
+                <p class="small text-secondary mt-2">No se realizan cobros reales.</p>
+            </div>
+        </div>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="pvToast" class="toast" role="status">
+            <div class="toast-header"><strong class="me-auto">PixelVault</strong><button class="btn-close"
+                    data-bs-dismiss="toast" aria-label="Cerrar"></button></div>
+            <div id="toastText" class="toast-body">Juego agregado.</div>
+        </div>
+    </div>
+    <footer class="site-footer py-4 mt-5">
+        <div class="container d-flex flex-wrap justify-content-between gap-2"><strong>🎮 PixelVault</strong><span
+                class="text-secondary small">Proyecto escolar · HTML, CSS, JavaScript y Bootstrap · 2026</span><a
+                href="index.html">Volver a la tienda</a></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
