@@ -304,19 +304,211 @@ h3,
         padding: .5rem 0
     }
 }
+/* ===== PÁGINA HERRAMIENTAS ===== */
 
-.discord-btn {
-    display: inline-block;
-    padding: 12px 20px;
-    background: #5865F2;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: 0.2s;
+/* Navbar activa */
+.nav-link.active {
+    color: #6C63FF !important;
+    font-weight: 600;
 }
 
-.discord-btn:hover {
-    background: #4752C4;
-    transform: translateY(-2px);
+/* Cards de herramientas */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(108, 99, 255, 0.15) !important;
+}
+
+/* Botón tema */
+#btnTema {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Modo oscuro */
+[data-bs-theme="dark"] body {
+    background-color: #0f0f1a;
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .navbar {
+    background-color: #1a1a2e !important;
+}
+
+[data-bs-theme="dark"] .nav-link {
+    color: #a0a0b8 !important;
+}
+
+[data-bs-theme="dark"] .nav-link.active {
+    color: #6C63FF !important;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: #1a1a2e;
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .card-title {
+    color: #ffffff !important;
+}
+
+[data-bs-theme="dark"] .card-text {
+    color: #a0a0b8 !important;
+}
+
+[data-bs-theme="dark"] section[style*="f8f9ff"] {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
+}
+
+[data-bs-theme="dark"] .text-muted {
+    color: #a0a0b8 !important;
+}
+/* Página de herramientas */
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(108, 99, 255, 0.15) !important;
+}
+
+.nav-link.active {
+    font-weight: 600;
+    color: var(--bs-primary) !important;
+}
+/* ===== ESTILOS PARA LA PÁGINA DE HERRAMIENTAS ===== */
+
+/* Caja del logo con sombra y animación */
+.logo-box {
+    width: 64px;
+    height: 64px;
+    background: #ffffff;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.logo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.game-card:hover .logo-box {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+[data-bs-theme="dark"] .logo-box {
+    background: #2b3035;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Cajas de descripción "Cómo se usa" */
+.tool-desc-box {
+    background: rgba(13, 110, 253, 0.05);
+    border-left: 4px solid #0d6efd;
+    border-radius: 0 8px 8px 0;
+}
+
+[data-bs-theme="dark"] .tool-desc-box {
+    background: rgba(13, 110, 253, 0.15);
+}
+
+/* Asegurar que el link activo se vea bien */
+.nav-link.active {
+    font-weight: 600;
+    color: var(--bs-primary) !important;
+}
+/* ===== GOOGLE TRANSLATE - OCULTAR BANNER ===== */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0px !important;
+}
+
+.goog-te-gadget {
+    font-size: 0 !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+    display: none !important;
+}
+
+#google_translate_element {
+    display: none !important;
+}
+
+/* Botón personalizado de traducción */
+.btn-traducir {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-traducir:hover {
+    transform: scale(1.05);
+}
+/* Botón de traducción */
+#textoIdioma {
+    font-weight: 600;
+}
+
+/* Botón flotante de música */
+.btn-musica {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6C63FF, #5a52d5);
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4);
+    z-index: 9999;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-musica:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(108, 99, 255, 0.6);
+}
+
+.btn-musica.activa {
+    background: linear-gradient(135deg, #00c853, #00a844);
+    animation: pulso 2s infinite;
+}
+
+@keyframes pulso {
+    0%, 100% {
+        box-shadow: 0 4px 15px rgba(0, 200, 83, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 25px rgba(0, 200, 83, 0.8);
+    }
+}
+
+/* Ocultar en móviles si molesta */
+@media (max-width: 768px) {
+    .btn-musica {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
 }

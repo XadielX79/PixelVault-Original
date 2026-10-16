@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>15 Herramientas de Google | PixelVault</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <script>try {document.documentElement.setAttribute('data-bs-theme', localStorage.getItem('pv-theme') || 'light')} catch (e) { }</script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl sticky-top site-nav border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark">🎮</span> PixelVault</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-xl-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav_inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#juegos" data-i18n="nav_juegos">Juegos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto" data-i18n="nav_contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript.html" data-i18n="nav_js">JavaScript</a></li>
+                    <li class="nav-item"><a class="nav-link" href="jquery.html" data-i18n="nav_jquery">jQuery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="json.html" data-i18n="nav_json">JSON</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hosting.html" data-i18n="nav_hosting">Hosting y dominios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cuestionario.html" data-i18n="nav_cuestionario">Cuestionario</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="herramientas.html" data-i18n="nav_herramientas">Herramientas Google</a></li>
+                    <li class="nav-item ms-xl-2">
+                        <button type="button" id="btnIdioma" class="btn btn-sm btn-outline-secondary">
+                            <i class="bi bi-translate me-1"></i><span id="textoIdioma">ES | EN</span>
+                        </button>
+                    </li>
+                    <li class="nav-item ms-xl-2"><button class="btn btn-sm btn-outline-secondary theme-toggle" type="button"><i class="bi bi-moon-stars"></i> <span data-i18n="btn_tema">Tema</span></button></li>
+                    <li class="nav-item ms-xl-2"><button class="btn btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#cart">🛍 <span data-i18n="btn_carrito">Carrito</span> <span id="cartCount" class="badge text-bg-light">0</span></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="py-5 mt-5" style="background: linear-gradient(135deg, #f8f9ff 0%, #eef0ff 100%);">
+            <div class="container text-center py-5">
+                <span class="eyebrow" data-i18n="tools_eyebrow">RECURSOS GRATUITOS</span>
+                <h1 class="display-4 fw-bold mt-3">15 Herramientas de <span class="accent">Google</span></h1>
+                <p class="lead text-secondary mx-auto" style="max-width: 700px;" data-i18n="tools_desc">Las herramientas más utilizadas para investigación, productividad y educación. Todas gratuitas, con sus logos oficiales y guías de uso.</p>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <div class="row g-4">
+                <!-- 1. Google Search -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 game-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">01</span>
+                                <div class="logo-box"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Search"></div>
+                            </div>
+                            <h3 class="h5 fw-bold" data-i18n="t1_name">Google Search</h3>
+                            <p class="text-secondary" data-i18n="t1_desc">El motor de búsqueda más usado del mundo. Permite encontrar información de cualquier tema en segundos.</p>
+                            <div class="tool-desc-box p-3 mt-3">
+                                <strong class="text-primary small d-block mb-1" data-i18n="tools_how">¿Cómo se usa?</strong>
+                                <p class="mb-0 small text-secondary" data-i18n="t1_how">Escribe tu consulta en google.com. Usa comillas para búsquedas exactas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2. Google Scholar -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 game-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">02</span>
+                                <div class="logo-box"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar"></div>
+                            </div>
+                            <h3 class="h5 fw-bold" data-i18n="t2_name">Google Scholar</h3>
+                            <p class="text-secondary" data-i18n="t2_desc">Buscador académico que encuentra artículos científicos, tesis y libros. Ideal para investigaciones serias.</p>
+                            <div class="tool-desc-box p-3 mt-3">
+                                <strong class="text-primary small d-block mb-1" data-i18n="tools_how">¿Cómo se usa?</strong>
+                                <p class="mb-0 small text-secondary" data-i18n="t2_how">Entra a scholar.google.com. Busca temas académicos y exporta citas en formato APA.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3. Google Docs -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 game-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">03</span>
+                                <div class="logo-box"><img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Google_Docs_logo_%282014-2020%29.svg" alt="Google Docs"></div>
+                            </div>
+                            <h3 class="h5 fw-bold" data-i18n="t3_name">Google Docs</h3>
+                            <p class="text-secondary" data-i18n="t3_desc">Editor de documentos en la nube. Permite escribir, editar y compartir textos en tiempo real.</p>
+                            <div class="tool-desc-box p-3 mt-3">
+                                <strong class="text-primary small d-block mb-1" data-i18n="tools_how">¿Cómo se usa?</strong>
+                                <p class="mb-0 small text-secondary" data-i18n="t3_how">Entra a docs.google.com, crea un documento y comparte el enlace con permisos de edición.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4. Google Sheets -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 game-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">04</span>
+                                <div class="logo-box"><img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Google_Sheets_logo_%282014-2020%29.svg" alt="Google Sheets"></div>
+                            </div>
+                            <h3 class="h5 fw-bold" data-i18n="t4_name">Google Sheets</h3>
+                            <p class="text-secondary" data-i18n="t4_desc">Hojas de cálculo en la nube con fórmulas, gráficos y tablas dinámicas para organizar datos.</p>
+                            <div class="tool-desc-box p-3 mt-3" style="border-color: #0f9d58; background: rgba(15, 157, 88, 0.05);">
+                                <strong class="small d-block mb-1" style="color: #0f9d58;" data-i18n="tools_how">¿Cómo se usa?</strong>
+                                <p class="mb-0 small text-secondary" data-i18n="t4_how">Entra a sheets.google.com. Usa fórmulas como =SUMA() e inserta gráficos desde el menú.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5. Google Slides -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 game-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">05</span>
+                                <div class="logo-box"><img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Google_Slides_logo_%282014-2020%29.svg" alt="Google Slides"></div>
+                            </div>
+                            <h3 class="h5 fw-bold" data-i18n="t5_name">Google Slides</h3>
+                            <p class="text-secondary" data-i18n="t5_desc">Crea presentaciones profesionales con diapositivas, animaciones, imágenes y videos.</p>
+                            <div class="tool-desc-box p-3 mt-3" style="border-color: #f4b400; background: rgba(244, 180, 0, 0.05);">
+                                <strong class="small d-block mb-1" style="color: #f4b400;" data-i18n="tools_how">¿Cómo se usa?</strong>
+                                <p class="mb-0 small text-secondary" data-i18n="t5_how">Entra a slides.google.com. Elige una plantilla, agrega contenido y presenta desde el navegador.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6. Google Forms -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 game-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">06</span>
+                                <div class="logo-box"><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Google_Forms_logo_%282014-2020%29.svg" alt="Google Forms"></div>
+                            </div>
+                            <h3 class="h5 fw-bold" data-i18n="t6_name">Google Forms</h3>
+                            <p class="text-secondary" data-i18n="t6_desc">Crea encuestas, cuestionarios y formularios. Las respuestas se guardan en una hoja de cálculo.</p>
+                            <div class="tool-desc-box p-3 mt-3" style="border-color: #673ab7; background: rgba(103, 58, 183, 0.05);">
+                                <strong class="small d-block mb-1" style="color: #673ab7;" data-i18n="tools_how">¿Cómo se usa?</strong>
+                                <p class="mb-0 small text-secondary" data-i18n="t6_how">Entra a forms.google.com. Crea preguntas y comparte el enlace para recibir respuestas en tiempo real.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7. Google Drive -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 game-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">07</span>
+                                <div class="logo-box"><img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg" alt="Google Drive"></div>
+                            </div>
+                            <h3 class="h5 fw-bold" data-i18n="t7_name">Google Drive</h3>
+                            <p class="text-secondary" data-i18n="t7_desc">Almacenamiento en la nube con 15GB gratis. Guarda archivos, fotos y documentos.</p>
+                            <div class="tool-desc-box p-3 mt-3">
+                                <strong class="text-primary small d-block mb-1" data-i18n="tools_how">¿Cómo se usa?</strong>
+                                <p class="mb-0 small text-secondary" data-i18n="t7_how">Entra a drive.google.com. Sube archivos, organiza en carpetas y comparte con enlaces.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8. Google Classroom -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 game-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">08</span>
+                                <div class="logo-box"><img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Classroom_logo.svg" alt="Google Classroom"></div>
+                            </div>
+                            <h3 class="h5 fw-bold" data-i18n="t8_name">Google Classroom</h3>
+                            <p class="text-secondary" data-i18n="t8_desc">Plataforma educativa para crear clases virtuales, asignar tareas y calificar trabajos.</p>
+                            <div class="tool-desc-box p-3 mt-3" style="border-color: #0f9d58; background: rgba(15, 157, 88, 0.05);">
+                                <strong class="small d-block mb-1" style="color: #0f9d58;" data-i18n="tools_how">¿Cómo se usa?</strong>
+                                <p class="mb-0 small text-secondary" data-i18n="t8_how">Entra a classroom.google.com. Crea una clase, genera un código y publica tareas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 9. Google Meet -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 game-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">09</span>
+                                <div class="logo-box"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Google_Meet_icon_%282020%29.svg" alt="Google Meet"></div>
+                            </div>
+                            <h3 class="h5 fw-bold" data-i18n="t9_name">Google Meet</h3>
+                            <p class="text-secondary" data-i18n="t9_desc">Videollamadas gratuitas en HD. Comparte pantalla y graba reuniones.</p>
+                            <div class="tool-desc-box p-3 mt-3" style="border-color: #00897b; background: rgba(0, 137, 123, 0.05);">
+                                <strong class="small d-block mb-1" style="color: #00897b;" data-i18n="tools_how">¿Cómo se usa?</strong>
+                                <p class="mb-0 small text-secondary" data-i18n="t9_how">Entra a meet.google.com. Crea una reunión y comparte el enlace con los participantes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 10. Google Calendar -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 game-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">10</span>
+                                <div class="logo-box"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg" alt="Google Calendar"></div>
+                            </div>
+                            <h3 class="h5 fw-bold" data-i18n="t10_name">Google Calendar</h3>
+                            <p class="text-secondary" data-i18n="t10_desc">Agenda digital para programar eventos, recordatorios y reuniones.</p>
+                            <div class="tool-desc-box p-3 mt-3">
+                                <strong class="text-primary small d-block mb-1" data-i18n="tools_how">¿Cómo se usa?</strong>
+                                <p class="mb-0 small text-secondary" data-i18n="t10_how">Entra a calendar.google.com. Crea eventos, agrega hora, descripción y recordatorios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 11. Google Keep -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 game-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">11</span>
+                                <div class="logo-box"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Google_Keep_icon_%282020%29.svg" alt="Google Keep"></div>
+                            </div>
+                            <h3 class="h5 fw-bold" data-i18n="t11_name">Google Keep</h3>
+                            <p class="text-secondary" data-i18n="t11_desc">Aplicación de notas rápidas. Crea notas de texto, listas y recordatorios con alarma.</p>
+                            <div class="tool-desc-box p-3 mt-3" style="border-color: #f4b400; background: rgba(244, 180, 0, 0.05);">
+                                <strong class="small d-block mb-1" style="color: #f4b400;" data-i18n="tools_how">¿Cómo se usa?</strong>
+                                <p class="mb-0 small text-secondary" data-i18n="t11_how">Entra a keep.google.com. Crea notas, agrega etiquetas y fija las importantes arriba.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 12. Google Sites -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 game-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">12</span>
+                                <div class="logo-box"><img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Google_Sites_icon_%282020%29.svg" alt="Google Sites"></div>
+                            </div>
+                            <h3 class="h5 fw-bold" data-i18n="t12_name">Google Sites</h3>
+                            <p class="text-secondary" data-i18n="t12_desc">Crea sitios web y portafolios sin saber programar, arrastrando y soltando elementos.</p>
+                            <div class="tool-desc-box p-3 mt-3">
+                                <strong class="text-primary small d-block mb-1" data-i18n="tools_how">¿Cómo se usa?</strong>
+                                <p class="mb-0 small text-secondary" data-i18n="t12_how">Entra a sites.google.com. Elige una plantilla, agrega contenido y publica con un clic.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 13. Google Translate -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 game-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">13</span>
+                                <div class="logo-box"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Google_Translate_logo.svg" alt="Google Translate"></div>
+                            </div>
+                            <h3 class="h5 fw-bold" data-i18n="t13_name">Google Translate</h3>
+                            <p class="text-secondary" data-i18n="t13_desc">Traductor gratuito que soporta más de 100 idiomas. Traduce texto, voz e imágenes.</p>
+                            <div class="tool-desc-box p-3 mt-3">
+                                <strong class="text-primary small d-block mb-1" data-i18n="tools_how">¿Cómo se usa?</strong>
+                                <p class="mb-0 small text-secondary" data-i18n="t13_how">Entra a translate.google.com. Selecciona los idiomas y escribe o pega el texto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 14. Google Maps -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 game-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">14</span>
+                                <div class="logo-box"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Google_Maps_icon_%282020%29.svg" alt="Google Maps"></div>
+                            </div>
+                            <h3 class="h5 fw-bold" data-i18n="t14_name">Google Maps</h3>
+                            <p class="text-secondary" data-i18n="t14_desc">Mapas interactivos con navegación GPS, vistas satelitales y transporte público.</p>
+                            <div class="tool-desc-box p-3 mt-3" style="border-color: #0f9d58; background: rgba(15, 157, 88, 0.05);">
+                                <strong class="small d-block mb-1" style="color: #0f9d58;" data-i18n="tools_how">¿Cómo se usa?</strong>
+                                <p class="mb-0 small text-secondary" data-i18n="t14_how">Entra a maps.google.com. Busca un lugar, obtén indicaciones y guarda lugares favoritos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 15. Google Earth -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 game-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">15</span>
+                                <div class="logo-box"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Google_Earth_logo.svg" alt="Google Earth"></div>
+                            </div>
+                            <h3 class="h5 fw-bold" data-i18n="t15_name">Google Earth</h3>
+                            <p class="text-secondary" data-i18n="t15_desc">Explora el planeta en 3D con imágenes satelitales de alta resolución.</p>
+                            <div class="tool-desc-box p-3 mt-3">
+                                <strong class="text-primary small d-block mb-1" data-i18n="tools_how">¿Cómo se usa?</strong>
+                                <p class="mb-0 small text-secondary" data-i18n="t15_how">Entra a earth.google.com. Navega por el globo y descubre lugares con 'Voy a tener suerte'.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer py-4 mt-5">
+        <div class="container d-flex flex-wrap justify-content-between gap-2">
+            <strong data-i18n="footer_brand">🎮 PixelVault</strong>
+            <span class="text-secondary small" data-i18n="footer_text">Proyecto escolar · HTML, CSS, JavaScript y Bootstrap · 2026</span>
+            <a href="index.html" data-i18n="footer_link">Volver a la tienda</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>  

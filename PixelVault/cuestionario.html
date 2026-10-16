@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="es" data-bs-theme="light">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,88 +9,100 @@
     <link href="css/estilos.css" rel="stylesheet">
     <script>try {document.documentElement.setAttribute('data-bs-theme', localStorage.getItem('pv-theme') || 'light')} catch (e) { }</script>
 </head>
+<!-- Música de fondo -->
+<audio id="musicaFondo" loop>
+    <source src="" type="audio/mpeg">
+</audio>
 
+<!-- Botón flotante -->
+<button id="btnMusica" class="btn-musica" title="Activar/Desactivar música">
+    <i class="bi bi-volume-mute-fill" id="iconoMusica"></i>
+</button>
+<body>
 <body>
     <nav class="navbar navbar-expand-xl sticky-top site-nav border-bottom">
-        <div class="container"><a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark">🎮</span>
-                PixelVault</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#menu" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark">🎮</span> PixelVault</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto align-items-xl-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#juegos">Juegos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
-                    <li class="nav-item"><a class="nav-link" href="jquery.html">jQuery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="json.html">JSON</a></li>
-                    <li class="nav-item"><a class="nav-link" href="hosting.html">Hosting y dominios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cuestionario.html">Cuestionario</a></li>
-                    <li class="nav-item ms-xl-2"><button class="btn btn-sm btn-outline-secondary theme-toggle"
-                            type="button"><i class="bi bi-moon-stars"></i> Tema</button></li>
-                    <li class="nav-item ms-xl-2"><button class="btn btn-sm btn-primary" data-bs-toggle="offcanvas"
-                            data-bs-target="#cart">🛍 Carrito <span id="cartCount"
-                                class="badge text-bg-light">0</span></button></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav_inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#juegos" data-i18n="nav_juegos">Juegos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto" data-i18n="nav_contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript.html" data-i18n="nav_js">JavaScript</a></li>
+                    <li class="nav-item"><a class="nav-link" href="jquery.html" data-i18n="nav_jquery">jQuery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="json.html" data-i18n="nav_json">JSON</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hosting.html" data-i18n="nav_hosting">Hosting y dominios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cuestionario.html" data-i18n="nav_cuestionario">Cuestionario</a></li>
+                    <li class="nav-item"><a class="nav-link" href="herramientas.html" data-i18n="nav_herramientas">Herramientas Google</a></li>
+                    <li class="nav-item ms-xl-2">
+                        <button type="button" id="btnIdioma" class="btn btn-sm btn-outline-secondary">
+                            <i class="bi bi-translate me-1"></i><span id="textoIdioma">ES | EN</span>
+                        </button>
+                    </li>
+                    <li class="nav-item ms-xl-2"><button class="btn btn-sm btn-outline-secondary theme-toggle" type="button"><i class="bi bi-moon-stars"></i> <span data-i18n="btn_tema">Tema</span></button></li>
+                    <li class="nav-item ms-xl-2"><button class="btn btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#cart">🛍 <span data-i18n="btn_carrito">Carrito</span> <span id="cartCount" class="badge text-bg-light">0</span></button></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main class="container page-content py-5">
-        <div class="page-intro mb-5"><span class="eyebrow">REPASO</span>
-            <h1 class="display-5 fw-bold mt-2">Cuestionario de repaso</h1>
-            <p class="lead text-secondary">JavaScript, jQuery, JSON, hosting y dominios.</p>
+        <div class="page-intro mb-5">
+            <span class="eyebrow" data-i18n="quiz_eyebrow">REPASO</span>
+            <h1 class="display-5 fw-bold mt-2" data-i18n="quiz_title">Cuestionario de repaso</h1>
+            <p class="lead text-secondary" data-i18n="quiz_desc">JavaScript, jQuery, JSON, hosting y dominios.</p>
         </div>
         <form id="quiz" class="content-card">
-            <p class="text-secondary">Selecciona una respuesta por pregunta y revisa tu resultado.</p>
+            <p class="text-secondary" data-i18n="quiz_intro">Selecciona una respuesta por pregunta y revisa tu resultado.</p>
             <fieldset class="quiz-q">
-                <legend class="h6 fw-bold">1. ¿Para qué sirve JavaScript?</legend><label class="quiz-option"><input
-                        type="radio" name="q1" value="a" required> Crear interacción</label><label
-                    class="quiz-option"><input type="radio" name="q1" value="b" required> Guardar archivos del
-                    servidor</label><label class="quiz-option"><input type="radio" name="q1" value="c" required> Comprar
-                    dominios</label>
+                <legend class="h6 fw-bold" data-i18n="quiz_q1">1. ¿Para qué sirve JavaScript?</legend>
+                <label class="quiz-option"><input type="radio" name="q1" value="a" required> <span data-i18n="quiz_q1_a">Crear interacción</span></label>
+                <label class="quiz-option"><input type="radio" name="q1" value="b" required> <span data-i18n="quiz_q1_b">Guardar archivos del servidor</span></label>
+                <label class="quiz-option"><input type="radio" name="q1" value="c" required> <span data-i18n="quiz_q1_c">Comprar dominios</span></label>
             </fieldset>
             <fieldset class="quiz-q">
-                <legend class="h6 fw-bold">2. ¿Qué biblioteca ofrece fadeIn() y slideToggle()?</legend><label
-                    class="quiz-option"><input type="radio" name="q2" value="a" required> Bootstrap</label><label
-                    class="quiz-option"><input type="radio" name="q2" value="b" required> jQuery</label><label
-                    class="quiz-option"><input type="radio" name="q2" value="c" required> JSON</label>
+                <legend class="h6 fw-bold" data-i18n="quiz_q2">2. ¿Qué biblioteca ofrece fadeIn() y slideToggle()?</legend>
+                <label class="quiz-option"><input type="radio" name="q2" value="a" required> <span data-i18n="quiz_q2_a">Bootstrap</span></label>
+                <label class="quiz-option"><input type="radio" name="q2" value="b" required> <span data-i18n="quiz_q2_b">jQuery</span></label>
+                <label class="quiz-option"><input type="radio" name="q2" value="c" required> <span data-i18n="quiz_q2_c">JSON</span></label>
             </fieldset>
             <fieldset class="quiz-q">
-                <legend class="h6 fw-bold">3. ¿Para qué se usa JSON?</legend><label class="quiz-option"><input
-                        type="radio" name="q3" value="a" required> Cambiar colores</label><label
-                    class="quiz-option"><input type="radio" name="q3" value="b" required> Crear dominios</label><label
-                    class="quiz-option"><input type="radio" name="q3" value="c" required> Representar e intercambiar
-                    datos</label>
+                <legend class="h6 fw-bold" data-i18n="quiz_q3">3. ¿Para qué se usa JSON?</legend>
+                <label class="quiz-option"><input type="radio" name="q3" value="a" required> <span data-i18n="quiz_q3_a">Cambiar colores</span></label>
+                <label class="quiz-option"><input type="radio" name="q3" value="b" required> <span data-i18n="quiz_q3_b">Crear dominios</span></label>
+                <label class="quiz-option"><input type="radio" name="q3" value="c" required> <span data-i18n="quiz_q3_c">Representar e intercambiar datos</span></label>
             </fieldset>
             <fieldset class="quiz-q">
-                <legend class="h6 fw-bold">4. ¿Qué servicio aloja los archivos de una página?</legend><label
-                    class="quiz-option"><input type="radio" name="q4" value="a" required> Hosting</label><label
-                    class="quiz-option"><input type="radio" name="q4" value="b" required> Dominio</label><label
-                    class="quiz-option"><input type="radio" name="q4" value="c" required> Evento click</label>
+                <legend class="h6 fw-bold" data-i18n="quiz_q4">4. ¿Qué servicio aloja los archivos de una página?</legend>
+                <label class="quiz-option"><input type="radio" name="q4" value="a" required> <span data-i18n="quiz_q4_a">Hosting</span></label>
+                <label class="quiz-option"><input type="radio" name="q4" value="b" required> <span data-i18n="quiz_q4_b">Dominio</span></label>
+                <label class="quiz-option"><input type="radio" name="q4" value="c" required> <span data-i18n="quiz_q4_c">Evento click</span></label>
             </fieldset>
             <fieldset class="quiz-q">
-                <legend class="h6 fw-bold">5. ¿Qué es un dominio?</legend><label class="quiz-option"><input type="radio"
-                        name="q5" value="a" required> Un precio</label><label class="quiz-option"><input type="radio"
-                        name="q5" value="b" required> El nombre que identifica un sitio</label><label
-                    class="quiz-option"><input type="radio" name="q5" value="c" required> Una variable</label>
+                <legend class="h6 fw-bold" data-i18n="quiz_q5">5. ¿Qué es un dominio?</legend>
+                <label class="quiz-option"><input type="radio" name="q5" value="a" required> <span data-i18n="quiz_q5_a">Un precio</span></label>
+                <label class="quiz-option"><input type="radio" name="q5" value="b" required> <span data-i18n="quiz_q5_b">El nombre que identifica un sitio</span></label>
+                <label class="quiz-option"><input type="radio" name="q5" value="c" required> <span data-i18n="quiz_q5_c">Una variable</span></label>
             </fieldset>
             <fieldset class="quiz-q">
-                <legend class="h6 fw-bold">6. ¿El carrito de PixelVault cobra dinero real?</legend><label
-                    class="quiz-option"><input type="radio" name="q6" value="a" required> Sí,
-                    automáticamente</label><label class="quiz-option"><input type="radio" name="q6" value="b" required>
-                    Solo con JSON</label><label class="quiz-option"><input type="radio" name="q6" value="c" required>
-                    No, es una simulación</label>
-            </fieldset><button class="btn btn-primary mt-4" type="submit">Calificar</button> <button
-                class="btn btn-outline-secondary mt-4" type="reset">Intentar de nuevo</button>
+                <legend class="h6 fw-bold" data-i18n="quiz_q6">6. ¿El carrito de PixelVault cobra dinero real?</legend>
+                <label class="quiz-option"><input type="radio" name="q6" value="a" required> <span data-i18n="quiz_q6_a">Sí, automáticamente</span></label>
+                <label class="quiz-option"><input type="radio" name="q6" value="b" required> <span data-i18n="quiz_q6_b">Solo con JSON</span></label>
+                <label class="quiz-option"><input type="radio" name="q6" value="c" required> <span data-i18n="quiz_q6_c">No, es una simulación</span></label>
+            </fieldset>
+            <button class="btn btn-primary mt-4" type="submit" data-i18n="quiz_btn_submit">Calificar</button> 
+            <button class="btn btn-outline-secondary mt-4" type="reset" data-i18n="quiz_btn_reset">Intentar de nuevo</button>
             <div id="quizResult" class="alert d-none mt-4" role="status"></div>
         </form>
     </main>
     <footer class="site-footer py-4 mt-5">
-        <div class="container d-flex flex-wrap justify-content-between gap-2"><strong>🎮 PixelVault</strong><span
-                class="text-secondary small">Proyecto escolar · HTML, CSS, JavaScript y Bootstrap · 2026</span><a
-                href="index.html">Volver a la tienda</a></div>
+        <div class="container d-flex flex-wrap justify-content-between gap-2">
+            <strong data-i18n="footer_brand">🎮 PixelVault</strong>
+            <span class="text-secondary small" data-i18n="footer_text">Proyecto escolar · HTML, CSS, JavaScript y Bootstrap · 2026</span>
+            <a href="index.html" data-i18n="footer_link">Volver a la tienda</a>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
-
 </html>
