@@ -2,7 +2,7 @@
 
 **Estudiante:** [Anderson Adiel Barahona Velasquez]  
 **Fecha:** [Fecha de Entrega, ej. 16 octubre 2026]  
-**Enlace al Sitio Web (Vercel):** https://adielvelasquez444.vercel.app  
+**Enlace al Sitio Web (Vercel):** https://pixelvault-original79.vercel.app/  
 **Repositorio GitHub:** https://github.com/XadielX79/PixelVault-Original  
 
 ---
@@ -16,18 +16,16 @@
 
 ### 🎨 Diseño Visual
 * **Logotipo:**  
-  ![Logotipo de la Marca](logo.png)
+  ![Logotipo de la Marca](PixelVault/img/Logo.png)
 
 
 * **Paleta de Colores:**
-| Color | Código HEX | Uso en el Sitio |
-| :--- | :--- | :--- |
-| Dominante | `#6C63FF` | Botones primarios, highlights y enlaces activos |
-| Secundario | `#1A1A2E` | Fondos en modo oscuro, textos principales y navbar |
-| Acento | `#00B4D8` | Detalles, hovers, iconos y bordes de enfoque |
+![Paleta de colores](PixelVault/img/paleta%20de%20colores.png)
 
 * **Demostración del Carousel (Bootstrap):**  
-  ![Carousel de Productos](assets/carousel-demo.png) 
+  ![Carousel de Productos](PixelVault/img/NFS%20Most%20Wanted.webp) 
+   ![Carousel de Productos](PixelVault/img/minecraft.png) 
+    ![Carousel de Productos](PixelVault/img/Zelda.jpg) 
 
 ---
 
@@ -58,15 +56,17 @@ Explicación técnica del funcionamiento de la integración:
 A continuación se presentan las capturas de pantalla obligatorias que demuestran el funcionamiento del proyecto:
 
 1. **Vista General del Sitio (Home):**  
-   ![Vista General](assets/home-view.png)
+   ![Vista General](PixelVault/img/Inicio.png)
 2. **Funcionamiento del Carrito de Compras:**  
-   ![Carrito de Compras](assets/cart-demo.png)
+   ![Carrito de Compras](PixelVault/img/Carrito%201.png)
+   ![Carrito de Compras](PixelVault/img/Carrito%202.png)
 3. **Página de las 15 Herramientas de Google:**  
-   ![Herramientas Google](assets/google-tools.png)
+   ![Herramientas Google]()
 4. **Comparativa Modo Claro / Modo Oscuro:**  
-   ![Modo Claro y Oscuro](assets/theme-toggle.png)
+   ![Modo Claro y Oscuro](PixelVault/img/Modo%20Oscuro.png)
 5. **Evidencia de Notificación en Discord (Webhook):**  
-   ![Webhook Discord](assets/discord-webhook.png)
+   ![Webhook Discord](PixelVault/img/Discord%201.png)
+    ![Webhook Discord](PixelVault/img/Discord%202.jpeg)
 
 ---
 
