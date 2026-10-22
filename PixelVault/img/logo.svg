@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="bg3d" cx="50%" cy="30%">
+      <stop offset="0%" stop-color="#9B94FF"/>
+      <stop offset="100%" stop-color="#4A44B8"/>
+    </radialGradient>
+    <linearGradient id="ctrl3d" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f0f0f0"/>
+      <stop offset="100%" stop-color="#c0c0c0"/>
+    </linearGradient>
+    <linearGradient id="ctrl3dSide" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d0d0d0"/>
+      <stop offset="100%" stop-color="#909090"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo con gradiente -->
+  <circle cx="100" cy="100" r="95" fill="url(#bg3d)"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="white" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Sombra del control -->
+  <ellipse cx="100" cy="135" rx="55" ry="8" fill="#000" opacity="0.3"/>
+  
+  <!-- Control 3D - lado -->
+  <path d="M 50 80 L 50 120 Q 50 130 60 130 L 140 130 Q 150 130 150 120 L 150 80" fill="url(#ctrl3dSide)"/>
+  
+  <!-- Control 3D - frente -->
+  <rect x="50" y="70" width="100" height="50" rx="15" fill="url(#ctrl3d)"/>
+  
+  <!-- D-pad -->
+  <rect x="62" y="82" width="16" height="6" rx="1" fill="#2d2b55"/>
+  <rect x="67" y="77" width="6" height="16" rx="1" fill="#2d2b55"/>
+  
+  <!-- Joystick -->
+  <circle cx="88" cy="95" r="9" fill="#2d2b55"/>
+  <circle cx="88" cy="93" r="7" fill="#3d3b65"/>
+  <circle cx="86" cy="91" r="3" fill="#5d5b85"/>
+  
+  <!-- Botones coloridos -->
+  <circle cx="115" cy="88" r="6" fill="#FF6B6B"/>
+  <circle cx="115" cy="86" r="4" fill="#FF8B8B"/>
+  <circle cx="127" cy="95" r="6" fill="#4ECDC4"/>
+  <circle cx="127" cy="93" r="4" fill="#6EDDD4"/>
+  <circle cx="120" cy="102" r="6" fill="#FFD166"/>
+  <circle cx="120" cy="100" r="4" fill="#FFE186"/>
+  <circle cx="108" cy="95" r="6" fill="#6C63FF"/>
+  <circle cx="108" cy="93" r="4" fill="#8C83FF"/>
+  
+  <!-- Reflejo -->
+  <ellipse cx="100" cy="78" rx="40" ry="8" fill="white" opacity="0.3"/>
+  
+  <!-- Pixels decorativos -->
+  <rect x="135" y="55" width="10" height="10" rx="2" fill="#FFD166"/>
+  <rect x="150" y="65" width="8" height="8" rx="2" fill="#00B4D8"/>
+  <rect x="128" y="48" width="6" height="6" rx="1" fill="#FF6B6B"/>
+</svg>
